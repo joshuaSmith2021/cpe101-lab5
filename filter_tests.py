@@ -22,7 +22,7 @@ class TestPoly(unittest.TestCase):
         # Test remove_duplicates, which removes duplicates from a list
         self.assertListEqual(remove_duplicates([0, 1, 2, 2, 3, 4, 5, 6, 1]), [0, 1, 2, 3, 4, 5, 6])
         self.assertListEqual(remove_duplicates([None, 'wow', 'WOW', 0, None, 1, 2, 'WOW', None]), [None, 'wow', 'WOW', 0, 1, 2])
-        self.assertListEqual(remove_duplicates(['abcefgh', 0, 'abcdefgh']))
+        self.assertListEqual(remove_duplicates(['abcefgh', 0, 'abcdefgh']), ['abcdefgh', 0])
 
     def test_are_divisible_by_n(self):
         # Test are_divisible_by_n, which tests if numbers are divisible by n
