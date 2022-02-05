@@ -31,4 +31,3 @@ def div_by_5_all(numbers):
         i += 1
 
     return result
-

@@ -4,9 +4,11 @@
 # Section: 07
 
 import unittest
-from poly import *
+from poly import poly_add2, poly_mult2
+
+
 class TestPoly(unittest.TestCase):
-    #do not delete this part, use this to comapre two lists
+    # do not delete this part, use this to comapre two lists
     def assertListAlmostEqual(self, l1, l2):
         self.assertEqual(len(l1), len(l2))
         for el1, el2 in zip(l1, l2):
@@ -20,9 +22,15 @@ class TestPoly(unittest.TestCase):
 
     def test_poly_mult2(self):
         # Testing poly_mult2, which multiplies two second-degree polynomials
-        self.assertListEqual(poly_mult2([2, 5, 2], [-6, 2, 0]), [-12, -26, -2, 4, 0])
-        self.assertListEqual(poly_mult2([5, 6, -2], [-7, 0, -7]), [-35, -42, -21, -42, 14])
-        self.assertListAlmostEqual(poly_mult2([1/14, 1/7, 4.14], [1, 1, 1]), [0.071428, 0.2142857, 4.35428, 4.28285714, 4.14])
+        self.assertListEqual(poly_mult2([2, 5, 2], [-6, 2, 0]),
+                             [-12, -26, -2, 4, 0])
+
+        self.assertListEqual(poly_mult2([5, 6, -2], [-7, 0, -7]),
+                             [-35, -42, -21, -42, 14])
+
+        self.assertListAlmostEqual(poly_mult2([1/14, 1/7, 4.14], [1, 1, 1]),
+                                   [0.071428, 0.2142857,
+                                    4.35428, 4.28285714, 4.14])
 
 
 if __name__ == '__main__':

@@ -16,4 +16,3 @@ def product(values):
         result.append(current_product)
 
     return result
-

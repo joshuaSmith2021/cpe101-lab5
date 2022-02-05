@@ -4,11 +4,6 @@
 # Section: 07
 
 
-# Purpose: Filter out odd numbers from a list
-# Signature: list -> list
-from os import remove
-
-
 # Purpose: Find even numbers in list
 # Signature: list -> list
 def are_even(numbers):
